@@ -3,12 +3,6 @@ class ModelMessage {
     this.id = Math.random();
     this.text = text;
   }
-
-  createMessage(){}
-
-  readMessage(){}
-
-  updateMessage(){}
-
-  deleteMessage(){}
 }
+
+module.exports = ModelMessage;
