@@ -1,6 +1,16 @@
+const ModelReview = require("../models/Reviews.js");
+
 class ControllerReviews {
-  create(rating, comment) {}
+  #reviews = [];
+  create(rating, comment) {
+    const review = new ModelReview(rating, comment);
+    this.#reviews.push(review);
+    return { id: review.id, rating: review.rating, comment: review.comment };
+  }
   read(id) {}
   update(id, rating, comment) {}
   delete(id) {}
 }
+
+
+module.exports = ControllerReviews

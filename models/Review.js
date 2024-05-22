@@ -4,13 +4,6 @@ class ModelReview {
     this.rating = rating;
     this.comment = comment;
   }
-
-  createReview(){}
-
-  readReview(){}
-
-  updateReview(){}
-
-  deleteReview(){}
 }
 
+module.exports = ModelReview;

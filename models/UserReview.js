@@ -4,3 +4,5 @@ class ModelUserReview {
     this.idReview = idReview;
   }
 }
+
+module.exports = ModelUserReview;
