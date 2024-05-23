@@ -1,4 +1,6 @@
-const ModelReview = require("../models/Reviews.js");
+/** @format */
+
+const ModelReview = require('../models/Reviews.js');
 
 class ControllerReviews {
   #reviews = [];
@@ -7,10 +9,9 @@ class ControllerReviews {
     this.#reviews.push(review);
     return { id: review.id, rating: review.rating, comment: review.comment };
   }
-  read(id) {}
+  read() {}
   update(id, rating, comment) {}
   delete(id) {}
 }
 
-
-module.exports = ControllerReviews
+module.exports = ControllerReviews;
